@@ -78,13 +78,12 @@ class GamesArray:
                 stack.append((pi+1, last))
         return arr
     
-    # This method was used for debugging and commarisons only
+    # This method was used for debugging and comparisons only
     # https://stackoverflow.com/questions/18262306/quicksort-with-python
     def quicksort(self, array):
         less = []
         equal = []
         greater = []
-
         if len(array) > 1:
             pivot = array[0].combined_score
             for x in array:
